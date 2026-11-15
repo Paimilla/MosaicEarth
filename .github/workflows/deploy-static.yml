@@ -1,0 +1,60 @@
+name: Build and publish static site
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: static-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Publish static files to deploy branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          deploy_dir="$(mktemp -d)"
+          cd "$deploy_dir"
+          git init
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          auth="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          if git -c http.extraheader="AUTHORIZATION: basic $auth" fetch origin deploy; then
+            git checkout -B deploy FETCH_HEAD
+            git rm -r --ignore-unmatch .
+          else
+            git checkout --orphan deploy
+          fi
+          cp -a "$GITHUB_WORKSPACE/out/." .
+          touch .nojekyll
+          git add --all
+          if git diff --cached --quiet; then
+            echo "Static site is unchanged."
+            exit 0
+          fi
+          git commit -m "Deploy ${GITHUB_SHA}"
+          git -c http.extraheader="AUTHORIZATION: basic $auth" \
+            push origin HEAD:deploy
