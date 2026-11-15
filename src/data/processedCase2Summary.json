@@ -1,0 +1,173 @@
+{
+  "caseId": "CASO-02",
+  "title": "Salar de Pajonales, Chile ↔ Marte (Cráter Jezero y Olympia Undae)",
+  "status": "CALIBRATED_REAL_DATA",
+  "timestamp": "2026-11-15T05:11:05.996Z",
+  "earthSite": {
+    "name": "Salar de Pajonales",
+    "location": "Región de Atacama / Altiplano Chileno",
+    "coordinates": {
+      "lat": -25.17,
+      "lon": -68.82,
+      "elevationM": 3537
+    },
+    "topography": {
+      "source": "USGS SRTM 1-arcsecond DEM (s26_w069_1arc_v3.tif)",
+      "resolution": "30 m / pixel",
+      "tileMinElevationM": 3300,
+      "tileMaxElevationM": 5805,
+      "basinElevationMeanM": 3721,
+      "basinElevationMedianM": 3620,
+      "basinSlopeMedianDeg": 4.04,
+      "basinSlope95Deg": 22.67
+    },
+    "spectral": {
+      "source": "Copernicus Sentinel-2 L2A (15 Julio - 12 Noviembre 2026)",
+      "bands": {
+        "B02 (Blue 490nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B02_(Raw).tiff",
+          "sizeBytes": 6495361,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "B03 (Green 560nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B03_(Raw).tiff",
+          "sizeBytes": 6698256,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "B04 (Red 665nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B04_(Raw).tiff",
+          "sizeBytes": 6958872,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "B08 (NIR 842nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B08_(Raw).tiff",
+          "sizeBytes": 7038577,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "B11 (SWIR-1 1610nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B11_(Raw).tiff",
+          "sizeBytes": 7003945,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "B12 (SWIR-2 2190nm)": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_B12_(Raw).tiff",
+          "sizeBytes": 6754627,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        },
+        "True Color RGB": {
+          "file": "2026-07-15-00_00_2026-11-12-23_59_Sentinel-2_L2A_True_color.tiff",
+          "sizeBytes": 23736600,
+          "resolution": "10-20 m/px",
+          "status": "CALIBRATED_GEO_TIFF"
+        }
+      },
+      "gypsumAbsorptionIndex": {
+        "swir1_nm": 1610,
+        "swir2_nm": 2190,
+        "indexFormula": "(B11 - B12) / (B11 + B12)",
+        "gypsumHydrationDiagnostic": "Fuerte absorción en 1.93 µm y 2.2 µm atribuible a CaSO4·2H2O"
+      }
+    },
+    "inSituGeochemistryAndClimate": {
+      "source": "Frontiers in Astronomy and Space Sciences (Tebes-Cayo et al., 2025/2026)",
+      "dataFile": "data sheet 1 pajonales.docx",
+      "stationId": "ATA17-18 Climate Station (3,715 msnm)",
+      "meteorology": {
+        "airTemperatureRangeC": {
+          "min": -5.7,
+          "mean": 16.5,
+          "max": 37.9
+        },
+        "soilTemperatureRangeC": {
+          "min": -4.9,
+          "mean": 21.1,
+          "max": 57.4
+        },
+        "relativeHumidityAirPercent": {
+          "min": 7,
+          "mean": 30.6,
+          "max": 86,
+          "rainlessMean": 30
+        },
+        "relativeHumiditySoilPercent": {
+          "min": 9,
+          "mean": 17.6,
+          "max": 38
+        },
+        "solarIrradianceUV": "Régimen hiperárido de gran altitud con UV extremo"
+      },
+      "mineralogyXRD": {
+        "dominantMineral": "Yeso (CaSO4·2H2O)",
+        "gypsumAbundancePercent": "Variable por muestra: estromatolitos (PAJ-STR) ~91% yeso, <5% anhidrita; costras (PAJ-CRU) ~55% halita, ~38% yeso (Frontiers 2026 Table S7)",
+        "associatedEvaporites": [
+          {
+            "mineral": "Anhidrita (CaSO4)",
+            "fraction": "2.2 ± 4.9%"
+          },
+          {
+            "mineral": "Polihalita (K2Ca2Mg(SO4)4·2H2O)",
+            "fraction": "4.0 ± 6.92%"
+          },
+          {
+            "mineral": "Epsomita (MgSO4·7H2O)",
+            "fraction": "5.4% ± 3.1%"
+          },
+          {
+            "mineral": "Halita (NaCl)",
+            "fraction": "3.5% ± 2.0%"
+          }
+        ]
+      }
+    }
+  },
+  "planetaryTarget": {
+    "targetBody": "Marte",
+    "analogTargets": [
+      "Olympia Undae (dunas polares de yeso)",
+      "Cráter Jezero (estratos de sulfato)"
+    ],
+    "spectralEvidence": "Firmas de absorción en 1.9 µm y 2.2 µm registradas por MRO CRISM y OMEGA Mars Express",
+    "inSituComparison": "Instrumentación Perseverance (SHERLOC Raman a ~1000 cm-1 y fluorescencia en sulfatos; PIXL micro-XRF)"
+  },
+  "mcdaEvaluation": {
+    "overallScore": 91,
+    "maxScore": 100,
+    "formula": "S = 100 · (1 - Σ(w_j · d_j) / Σ w_j)",
+    "dimensions": [
+      {
+        "key": "geology",
+        "label": "Mineralogía de Yeso y Evaporitas",
+        "weight": 1,
+        "normalizedDiff": 0.06,
+        "similarity": 94
+      },
+      {
+        "key": "spectral",
+        "label": "Absorción Espectral Infrarroja (SWIR)",
+        "weight": 1,
+        "normalizedDiff": 0.07,
+        "similarity": 93
+      },
+      {
+        "key": "hydrology",
+        "label": "Régimen Hiperárido y Actividad de Agua",
+        "weight": 0.9,
+        "normalizedDiff": 0.12,
+        "similarity": 88
+      },
+      {
+        "key": "biosignature",
+        "label": "Preservación de Biofirmas en Matriz Cristalográfica",
+        "weight": 1,
+        "normalizedDiff": 0.1,
+        "similarity": 90
+      }
+    ]
+  }
+}

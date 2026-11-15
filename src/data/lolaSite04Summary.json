@@ -1,0 +1,27 @@
+{
+  "product": "NASA LOLA Site 04 High-Resolution DEM (Barker et al., 2021)",
+  "productUrl": "https://pgda.gsfc.nasa.gov/products/78",
+  "targetFeature": "Borde del Cráter Shackleton (Site 04 - Artemis Base Camp candidate)",
+  "targetCoordinates": {
+    "lat": -89.9,
+    "lon": 0,
+    "referenceFrame": "MOON_ME (DE421)"
+  },
+  "grid": {
+    "columns": 3200,
+    "rows": 3200,
+    "resolutionMPerPixel": 5,
+    "areaCoverageKm2": 256
+  },
+  "topographyStats": {
+    "minElevationM": -2846.5,
+    "maxElevationM": 1805,
+    "reliefAmplitudeM": 4651.5,
+    "medianElevationM": 668.3,
+    "meanElevationM": 246.4,
+    "medianSlopeDeg": 20.43,
+    "p90SlopeDeg": 32.62,
+    "steepestWallSlopeDeg": 43.12
+  },
+  "status": "PROCESSED_VERIFIED"
+}

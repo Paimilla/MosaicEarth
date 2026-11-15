@@ -1,0 +1,80 @@
+{
+  "source": "PDS calibrated RIMFAX CSV, sol 400",
+  "csvBytes": 2500732825,
+  "csvDataRows": 10549,
+  "pdsXmlDeclaredRecords": 10549,
+  "recordCountMatchesXml": true,
+  "recordTypes": {
+    "0": 10505,
+    "5": 36,
+    "8": 8
+  },
+  "recordTypeMeaning": {
+    "0": "Active sounding, time-domain radar samples",
+    "5": "Housekeeping, no sample columns",
+    "8": "Calibration arrays, excluded from radar sample statistics"
+  },
+  "activeSoundings": 10505,
+  "headerColumns": 16474,
+  "metadataFields": 90,
+  "sampleColumns": 16384,
+  "declaredSamplesPerRow": {
+    "min": 5640,
+    "max": 16384
+  },
+  "sampleValues": {
+    "count": 149755656,
+    "blankWithinDeclaredLength": 0,
+    "invalid": 0,
+    "min": -504208922,
+    "max": 449901467.4,
+    "mean": -20.396161285437344,
+    "rms": 3148955.1623378377,
+    "perSoundingRmsRange": [
+      522.642130809832,
+      16709779.515120724
+    ],
+    "firstValuesPreview": [
+      52905.07586,
+      52866.23245,
+      52749.77175,
+      52555.90216,
+      52284.97057,
+      51937.46161,
+      51513.99667,
+      51015.33267,
+      50442.36043,
+      49796.10292,
+      49077.71315,
+      48288.4718,
+      47429.78461,
+      46503.17956,
+      45510.30368,
+      44452.91976
+    ],
+    "units": "PDS CDR calibrated ratio of received power to radiated power over each represented time increment; no depth conversion or cross-instrument normalization"
+  },
+  "roverCoordinateRows": 10505,
+  "roverLatitudeBounds": [
+    18.46194345,
+    18.4640581
+  ],
+  "roverLongitudeBounds": [
+    77.43610491,
+    77.4390737
+  ],
+  "product": {
+    "sol": "00400",
+    "startUtc": "2022-04-05T16:18:07.513Z",
+    "stopUtc": "2022-04-05T18:58:12.104Z",
+    "sampleTimeIncrementRange": [
+      0.0088646,
+      0.0709461
+    ],
+    "maxTimeDepthRange": [
+      49.997,
+      1162.381
+    ]
+  },
+  "limitation": "Streaming summary of the sample values and metadata only. No radar stratigraphy, subsurface depth, or geology interpreted."
+}

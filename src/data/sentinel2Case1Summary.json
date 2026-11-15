@@ -1,0 +1,195 @@
+{
+  "source": {
+    "provider": "Copernicus Data Space Ecosystem Browser",
+    "collection": "Sentinel-2 L2A",
+    "observationDate": "2026-11-12",
+    "exportedFiles": [
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B02_(Raw).tiff",
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B03_(Raw).tiff",
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B04_(Raw).tiff",
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B08_(Raw).tiff",
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B11_(Raw).tiff",
+      "2026-11-12-00_00_2026-11-12-23_59_Sentinel-2_L2A_B12_(Raw).tiff"
+    ],
+    "productNote": "Raw band exports, TIFF float32, WGS 84 (EPSG:4326)."
+  },
+  "raster": {
+    "width": 210,
+    "height": 297,
+    "bitsPerSample": 32,
+    "sampleFormat": "IEEE floating point",
+    "coordinateReferenceSystem": "EPSG:4326",
+    "pixelScaleDegrees": [
+      0.0000900200435093471,
+      0.00008408456913740554
+    ],
+    "approximatePixelSizeMeters": [
+      9.38277797130223,
+      9.360294236375985
+    ],
+    "boundsWgs84": {
+      "west": 25.141460895538334,
+      "east": 25.160365104675297,
+      "north": -20.54691235301952,
+      "south": -20.571885470053328
+    }
+  },
+  "profileCoverage": {
+    "profile": "GPR06, topo_GPR06_day02_dat006.txt",
+    "trackPoints": 465,
+    "pointsInsideRaster": 465,
+    "coveragePercent": 100,
+    "caveat": "All sampled GPR06 track points fall inside the exported raster."
+  },
+  "profileSpectralSummary": {
+    "profile": "GPR06, topo_GPR06_day02_dat006.txt",
+    "gpsPoints": 465,
+    "pointsWithRasterSamples": 465,
+    "uniqueRasterPixels": 71,
+    "method": "Nearest exported pixel at each GPS coordinate; repeated GPS records can map to the same raster cell.",
+    "reflectanceByBand": {
+      "B02": {
+        "count": 465,
+        "min": 0.15639999508857727,
+        "p05": 0.16220000386238098,
+        "median": 0.18330000340938568,
+        "p95": 0.2468000054359436,
+        "max": 0.260699987411499,
+        "mean": 0.1923402162328843
+      },
+      "B03": {
+        "count": 465,
+        "min": 0.18520000576972961,
+        "p05": 0.19370000064373016,
+        "median": 0.21289999783039093,
+        "p95": 0.28439998626708984,
+        "max": 0.2987000048160553,
+        "mean": 0.22551397867100212
+      },
+      "B04": {
+        "count": 465,
+        "min": 0.22709999978542328,
+        "p05": 0.23190000653266907,
+        "median": 0.24779999256134033,
+        "p95": 0.3296999931335449,
+        "max": 0.34060001373291016,
+        "mean": 0.2622565585438923
+      },
+      "B08": {
+        "count": 465,
+        "min": 0.25589999556541443,
+        "p05": 0.2596000134944916,
+        "median": 0.31299999356269836,
+        "p95": 0.38830000162124634,
+        "max": 0.39820000529289246,
+        "mean": 0.31803311852998634
+      },
+      "B11": {
+        "count": 465,
+        "min": 0.27399998903274536,
+        "p05": 0.27889999747276306,
+        "median": 0.45170000195503235,
+        "p95": 0.5099999904632568,
+        "max": 0.52920001745224,
+        "mean": 0.4318799989838754
+      },
+      "B12": {
+        "count": 465,
+        "min": 0.15410000085830688,
+        "p05": 0.15929999947547913,
+        "median": 0.38280001282691956,
+        "p95": 0.44909998774528503,
+        "max": 0.47530001401901245,
+        "mean": 0.35748043101961896
+      }
+    },
+    "spectralIndices": {
+      "ndvi": {
+        "count": 465,
+        "min": 0.046774233621423446,
+        "p05": 0.05143785337825127,
+        "median": 0.11042521709780471,
+        "p95": 0.12155000400378481,
+        "max": 0.12733877518516215,
+        "mean": 0.09656927527405411
+      },
+      "ndwiMcfeeters": {
+        "count": 465,
+        "min": -0.2198820649091792,
+        "p05": -0.21023540479301875,
+        "median": -0.18723640821737408,
+        "p95": -0.10396893204282934,
+        "max": -0.0988360096186126,
+        "mean": -0.1709026049388336
+      }
+    },
+    "interpretationLimit": "Spectral summaries and indices describe this scene along the sampled track; they do not establish mineralogy, paleo-water, or analog similarity."
+  },
+  "bands": {
+    "B02": {
+      "validPixels": 62370,
+      "minReflectance": 0.12200000137090683,
+      "p05Reflectance": 0.1501999944448471,
+      "medianReflectance": 0.20999999344348907,
+      "p95Reflectance": 0.305400013923645,
+      "maxReflectance": 0.38019999861717224,
+      "meanReflectance": 0.2192170931652597,
+      "units": "unitless surface reflectance as exported"
+    },
+    "B03": {
+      "validPixels": 62370,
+      "minReflectance": 0.13570000231266022,
+      "p05Reflectance": 0.16820000112056732,
+      "medianReflectance": 0.2378000020980835,
+      "p95Reflectance": 0.34279999136924744,
+      "maxReflectance": 0.41909998655319214,
+      "meanReflectance": 0.2474772005556523,
+      "units": "unitless surface reflectance as exported"
+    },
+    "B04": {
+      "validPixels": 62370,
+      "minReflectance": 0.13850000500679016,
+      "p05Reflectance": 0.17839999496936798,
+      "medianReflectance": 0.2614000141620636,
+      "p95Reflectance": 0.3702999949455261,
+      "maxReflectance": 0.4629000127315521,
+      "meanReflectance": 0.2694148083654508,
+      "units": "unitless surface reflectance as exported"
+    },
+    "B08": {
+      "validPixels": 62370,
+      "minReflectance": 0.1728000044822693,
+      "p05Reflectance": 0.21330000460147858,
+      "medianReflectance": 0.30809998512268066,
+      "p95Reflectance": 0.4154999852180481,
+      "maxReflectance": 0.5090000033378601,
+      "meanReflectance": 0.3113975164240248,
+      "units": "unitless surface reflectance as exported"
+    },
+    "B11": {
+      "validPixels": 62370,
+      "minReflectance": 0.2175000011920929,
+      "p05Reflectance": 0.24529999494552612,
+      "medianReflectance": 0.40149998664855957,
+      "p95Reflectance": 0.5396000146865845,
+      "maxReflectance": 0.6366000175476074,
+      "meanReflectance": 0.3906988070227405,
+      "units": "unitless surface reflectance as exported"
+    },
+    "B12": {
+      "validPixels": 62370,
+      "minReflectance": 0.1200999990105629,
+      "p05Reflectance": 0.14810000360012054,
+      "medianReflectance": 0.3091000020503998,
+      "p95Reflectance": 0.45829999446868896,
+      "maxReflectance": 0.5993000268936157,
+      "meanReflectance": 0.2992821821063418,
+      "units": "unitless surface reflectance as exported"
+    }
+  },
+  "caveats": [
+    "The Browser resampled all exported bands onto a common grid; B11 and B12 are natively 20 m and are represented on the approximately 9.4 m export grid.",
+    "This is one observation date and a small crop, not a seasonally matched or full-site mosaic.",
+    "No similarity score or geological classification is inferred from these band summaries."
+  ]
+}

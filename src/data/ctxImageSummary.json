@@ -1,0 +1,31 @@
+{
+  "productId": "D14_032794_1989_XN_18N282W",
+  "productType": "CTX EDR-derived pyramized GeoTIFF (ASU Mars Image Explorer)",
+  "spacecraft": "Mars_Reconnaissance_Orbiter",
+  "instrument": "CTX",
+  "target": "Mars",
+  "observationStart": "2013-07-25T20:13:27.259",
+  "orbit": 32794,
+  "imageFile": "D14_032794_1989_XN_18N282W.tiff",
+  "imageBytes": 107680119,
+  "imageFormat": "TIFF",
+  "tiffSignature": "49492a00",
+  "headerFile": "D14_032794_1989_XN_18N282W.isis.hdr",
+  "samples": 7645,
+  "lines": 18094,
+  "bands": 1,
+  "projection": "SimpleCylindrical",
+  "pixelResolutionM": 5.549404202531,
+  "footprint": {
+    "minLatitude": 17.950458066702,
+    "maxLatitude": 19.644389027194,
+    "minLongitude": 77.054831200165,
+    "maxLongitude": 77.770475002834,
+    "latitudeType": "Planetocentric",
+    "longitudeDirection": "PositiveEast",
+    "longitudeDomain": 360
+  },
+  "rimfaxTrackBoundsNumericallyContained": true,
+  "spatialNote": "Footprint/header latitude is planetocentric. RIMFAX XML rover latitude convention is not yet reconciled; numerical containment is a coverage check, not a precise reprojection.",
+  "displayNote": "Derived CTX orbital context image; observation date differs from the rover sol 400 traverse."
+}

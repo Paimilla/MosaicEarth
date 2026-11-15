@@ -1,0 +1,52 @@
+{
+  "productId": "DTEEC_045994_1985_046060_1985_U01",
+  "dataSetId": "MRO-M-HIRISE-5-DTM-V1.0",
+  "sourceProducts": "(ESP_045994_1985, ESP_046060_1985)",
+  "rationale": "Candidate landing site for 2020 mission in\r\n                             Jezero Crater",
+  "dtmFile": "DTEEC_045994_1985_046060_1985_U01.IMG",
+  "dtmBytes": 380814764,
+  "labelEmbedded": true,
+  "dimensions": {
+    "lines": 14266,
+    "samples": 6673,
+    "bands": 1,
+    "sampleBits": 32,
+    "sampleType": "PC_REAL"
+  },
+  "elevations": {
+    "count": 70220641,
+    "missing": 24976373,
+    "invalidOrOutOfLabelRange": 4,
+    "minM": -2679.185791015625,
+    "maxM": -2388.315185546875,
+    "meanM": -2555.956977838847,
+    "verticalDatum": "Mars 2000 equipotential surface",
+    "note": "Pixel elevations decoded from 32-bit little-endian PC_REAL samples after the embedded PDS3 label."
+  },
+  "map": {
+    "minimumLatitude": 18.305293550569,
+    "maximumLatitude": 18.548391096554,
+    "westernmostLongitude": 77.3833804,
+    "easternmostLongitude": 77.50109494,
+    "latitudeType": "PLANETOCENTRIC",
+    "longitudeDirection": "EAST",
+    "projection": "EQUIRECTANGULAR",
+    "mapScaleMetersPerPixel": 1.0096633268711,
+    "centerLatitude": 15,
+    "centerLongitude": 77.44
+  },
+  "rimfaxTrackBoundsNumericallyContained": true,
+  "spatialNote": "Both labels declare planetocentric latitude and east-positive longitude. Bounding-box containment is a coverage check; exact rover-to-DTM registration still needs coordinate reconciliation.",
+  "ortho": {
+    "file": "ESP_046060_1985_RED_C_01_ORTHO.JP2",
+    "labelFile": "ESP_046060_1985_RED_C_01_ORTHO.LBL",
+    "bytes": 33534820,
+    "productId": "ESP_046060_1985_RED_C_01_ORTHO",
+    "mapScaleMetersPerPixel": 1.0096633268711,
+    "dimensions": {
+      "lines": 14266,
+      "samples": 6673,
+      "bands": 1
+    }
+  }
+}

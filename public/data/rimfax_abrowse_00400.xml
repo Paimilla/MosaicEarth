@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/mars2020/v1/PDS4_MARS2020_1G00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Browse xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:mars2020="http://pds.nasa.gov/pds4/mission/mars2020/v1"
+    xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+    xmlns:proc="http://pds.nasa.gov/pds4/proc/v1" 
+    xmlns:msn_surface="http://pds.nasa.gov/pds4/msn_surface/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1             https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+                        http://pds.nasa.gov/pds4/mission/mars2020/v1 https://pds.nasa.gov/pds4/mission/mars2020/v1/PDS4_MARS2020_1G00_1000.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:mars2020_rimfax:browse_radargram:rimfax_abrowse_00400</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mars 2020 RIMFAX Annotated Browse Radargram Data Product</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Browse</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2022-06-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial product version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2022-04-05T16:18:07.513Z</start_date_time>
+            <stop_date_time>2022-04-05T18:58:12.104Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>Mars 2020</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.mars2020</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>Mars 2020</name>
+                <type>Host</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mars2020</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Radar Imager for Mars Subsurface Exploration</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:mars2020.rimfax</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+        <Mission_Area>
+          <mars2020:Mars2020_Parameters>              
+               <mars2020:Observation_Information>
+                  <mars2020:release_number>4</mars2020:release_number>
+                  <mars2020:mission_phase_name>Surface Mission</mars2020:mission_phase_name>                  
+                  <mars2020:spacecraft_clock_start>702447117</mars2020:spacecraft_clock_start>
+                  <mars2020:spacecraft_clock_stop>702456721</mars2020:spacecraft_clock_stop>
+                  <mars2020:spacecraft_clock_partition>1</mars2020:spacecraft_clock_partition>
+                  <mars2020:start_sol_number>00400</mars2020:start_sol_number>
+                  <mars2020:stop_sol_number>00400</mars2020:stop_sol_number>
+                  <mars2020:start_local_mean_solar_time>Sol-00400M11:39:40.024</mars2020:start_local_mean_solar_time>
+                  <mars2020:stop_local_mean_solar_time>Sol-00400M14:15:27.638</mars2020:stop_local_mean_solar_time>
+                  <mars2020:start_local_true_solar_time>12:18:06</mars2020:start_local_true_solar_time>
+                  <mars2020:start_local_true_solar_time_sol>00400</mars2020:start_local_true_solar_time_sol>
+                  <mars2020:stop_local_true_solar_time>14:53:52</mars2020:stop_local_true_solar_time>
+                  <mars2020:stop_local_true_solar_time_sol>00400</mars2020:stop_local_true_solar_time_sol>
+                  <mars2020:start_solar_longitude unit="deg">203.3366066</mars2020:start_solar_longitude>
+                  <mars2020:stop_solar_longitude unit="deg">203.4032693</mars2020:stop_solar_longitude>
+               </mars2020:Observation_Information>
+              <!-- RIMFAX keywords -->
+               <mars2020:RIMFAX_Parameters>
+                  <mars2020:config_id>1</mars2020:config_id>
+                  <mars2020:config_id>214</mars2020:config_id>
+                  <mars2020:config_id>240</mars2020:config_id>
+                  <mars2020:config_id>26</mars2020:config_id>
+                  <mars2020:config_id>56</mars2020:config_id>
+                  <mars2020:config_id>78</mars2020:config_id>
+                  <mars2020:start_utc>2022-04-05T16:18:07.513Z</mars2020:start_utc>
+                  <mars2020:stop_utc>2022-04-05T18:58:12.104Z</mars2020:stop_utc>
+                  <mars2020:start_jdate>2459675.17925362</mars2020:start_jdate>
+                  <mars2020:stop_jdate>2459675.29041787</mars2020:stop_jdate>
+                  <mars2020:start_sounding_counter>357391</mars2020:start_sounding_counter>
+                  <mars2020:stop_sounding_counter>367895</mars2020:stop_sounding_counter>
+                  <mars2020:min_rover_lat>18.46194345</mars2020:min_rover_lat>
+                  <mars2020:max_rover_lat>18.46405810</mars2020:max_rover_lat>
+                  <mars2020:min_rover_lon>77.43610491</mars2020:min_rover_lon>
+                  <mars2020:max_rover_lon>77.43907370</mars2020:max_rover_lon>
+                  <mars2020:min_rover_elev>-2222.759</mars2020:min_rover_elev>
+                  <mars2020:max_rover_elev>-2221.107</mars2020:max_rover_elev>
+               </mars2020:RIMFAX_Parameters>
+          </mars2020:Mars2020_Parameters>
+        </Mission_Area>
+    </Context_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:mars2020_rimfax:document:rimfax_cdr_sis</lid_reference>
+            <reference_type>browse_to_document</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:mars2020_rimfax:data_calibrated:rimfax_calibrated_00400::1.0</lidvid_reference>
+            <reference_type>browse_to_data</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <File_Area_Browse>
+        <File>
+            <file_name>rimfax_abrowse_00400.png</file_name>
+            <creation_date_time>2022-06-21T00:00</creation_date_time>
+        </File>
+        <Encoded_Image>
+            <name>RIMFAX Annotated Browse Image</name>
+            <local_identifier>rimfax_browse_image</local_identifier>
+            <offset unit="byte">0</offset>
+            <encoding_standard_id>PNG</encoding_standard_id>
+            <description>
+                Radargram for the calibrated time-domain radar data with the surface 
+                vertically shifted to incorporate topography
+                Annotated to show plot of Traverse distance (m) vs Two-way travel time (ns)
+            </description>
+        </Encoded_Image>
+    </File_Area_Browse>
+</Product_Browse>
