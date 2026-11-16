@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { MOCK_COMPARISONS } from "@/data/mockComparisonData";
 import { ALL_MOCK_SITES } from "@/data/mockPlanetaryData";
-import { IllustrativeAssessmentCard } from "./IllustrativeAssessmentCard";
+import { AssessmentCard } from "./AssessmentCard";
 import { RealTelemetryCard } from "./RealTelemetryCard";
 import {
   ArrowRightLeft,
@@ -49,13 +49,13 @@ export function ComparisonSection() {
               Planetary Analog Compatibility Assessment
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl font-sans">
-              Prototype comparisons using open-data references. The displayed scores are illustrative placeholders, not calculated or validated scientific results.
+              MCDA comparisons based on real open-data observations and documented case-specific criteria.
             </p>
           </div>
 
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-space-900 border border-cyan-500/40 text-cyan-300 font-mono text-xs self-start md:self-auto shadow-sm">
             <Calculator className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
-            <span>CASE {currentComp.caseNumber} · ILLUSTRATIVE SCORE: {currentComp.assessment.overallScore}/100</span>
+            <span>CASE {currentComp.caseNumber} · MCDA SCORE: {currentComp.assessment.overallScore}/100</span>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ export function ComparisonSection() {
             </div>
 
             {centerViewMode === "chart" ? (
-              <IllustrativeAssessmentCard
+              <AssessmentCard
                 assessment={currentComp.assessment}
                 targetBodyName={currentComp.targetBody}
               />

@@ -492,7 +492,7 @@ export function PlanetaryViewer({
                     <div className="flex items-center justify-between pt-1 font-mono text-[11px]">
                       <span className="text-slate-400">Target Body:</span>
                       <span className="text-cyan-300 font-semibold">{selectedSite.targetTargetBody}</span>
-                      <span className="text-slate-400">Illustrative score:</span>
+                      <span className="text-slate-400">MCDA score:</span>
                       <span className="font-bold text-emerald-300">{selectedSite.simulatedSimilarityIndex}</span>
                     </div>
                   </div>

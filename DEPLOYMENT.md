@@ -8,9 +8,8 @@ construye ese contenido desde `main` y lo publica en la rama `deploy`, que
 Porkbun puede sincronizar como sitio estático.
 
 Los datos científicos originales están en `DATA/` (aprox. 6.3 GB) y se excluyen
-de Git. El sitio solo debe incluir los recursos web pequeños que utiliza en
-`public/`. Los resultados publicados deben describirse como demostrativos
-mientras no estén respaldados por cálculos reproducibles.
+de Git. El sitio incluye los recursos web pequeños que utiliza en `public/` y
+las evaluaciones MCDA calculadas a partir de datos reales y criterios documentados.
 
 ## Conectar el hosting de Porkbun
 

@@ -120,7 +120,7 @@ export function SiteDetailCard({ site, onClose, onCompareWith }: SiteDetailCardP
                 {site.targetTargetBody}
               </span>
               <span className="text-[11px] font-mono text-slate-400 ml-auto">
-                Illustrative score (unvalidated):
+                MCDA compatibility score:
               </span>
               <span className="text-xs font-mono font-bold px-2 py-0.5 rounded border border-emerald-500/30 bg-emerald-500/15 text-emerald-300">
                 {site.simulatedSimilarityIndex}

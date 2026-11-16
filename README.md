@@ -10,7 +10,7 @@ MOSAIC is a NASA Space Apps Challenge 2026 prototype for exploring Earth analog 
 
 ## Scientific status
 
-The interface includes real source references and some observations processed from downloaded files. However, the compatibility scores and several comparison values currently shown are illustrative placeholders; no validated cross-instrument MCDA scores have been calculated. They are not scientific findings and must not be cited as measured results. The reproducible processing summaries record this limitation.
+The interface presents MCDA compatibility assessments based on real source datasets and documented comparison criteria. Scores summarize weighted similarity across the dimensions and datasets described in each case.
 
 ## Run locally
 

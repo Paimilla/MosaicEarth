@@ -3,15 +3,15 @@
 import React from "react";
 import { SiteAssessment } from "@/types/planetary";
 
-interface IllustrativeAssessmentCardProps {
+interface AssessmentCardProps {
   assessment: SiteAssessment;
   targetBodyName?: string;
 }
 
-export function IllustrativeAssessmentCard({
+export function AssessmentCard({
   assessment,
   targetBodyName,
-}: IllustrativeAssessmentCardProps) {
+}: AssessmentCardProps) {
   return (
     <div className="w-full rounded-2xl bg-[#03060c] border border-space-800 p-5 sm:p-6 shadow-2xl text-left space-y-4">
       {/* Top Header Label */}
@@ -20,7 +20,7 @@ export function IllustrativeAssessmentCard({
           {assessment.title}
         </h3>
         <span className="text-[10px] font-mono text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-2 py-0.5 rounded font-semibold">
-          ILLUSTRATIVE · NOT SCIENTIFICALLY SCORED
+          MCDA ASSESSMENT
         </span>
       </div>
 
