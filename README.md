@@ -2,6 +2,10 @@
 
 MOSAIC is a NASA Space Apps Challenge 2026 prototype for exploring Earth analog sites alongside Mars and lunar locations. It is built with Next.js, React, TypeScript, Tailwind CSS, and Leaflet.
 
+## Demo
+
+[Watch the MOSAIC demo on YouTube](https://youtu.be/SMd_xRKdOtc)
+
 ## What is in this repository
 
 - The web application and its map/analysis interfaces.
@@ -42,3 +46,7 @@ The static website is generated in `out/`. The project is configured for static 
 - [AMRDC Amundsen–Scott observations](https://doi.org/10.48567/r6wy-as19)
 
 Check the source dataset licenses and citation requirements before redistributing any downloaded data.
+
+## AI Use Disclaimer
+
+AI tools were used for **Coding, Debugging, or Troubleshooting** during MOSAIC development. Scientific datasets and MCDA results are based on the cited sources and project analysis; AI was not used to fabricate data or results.
